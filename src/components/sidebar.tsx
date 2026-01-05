@@ -16,7 +16,7 @@ export const SideBar = () => {
     return (
         <nav className="fixed top-0 left-0 h-screen w-16 md:w-24 bg-transparent flex flex-col items-center py-10 z-[999] hidden md:flex">
             <Image
-                src={isDarkMode ? "/logo.svg" : "/logolight.svg"}
+                src={isDarkMode ? "/logo.png" : "/logolight.png"}
                 alt="Logo"
                 width={48}
                 height={48}

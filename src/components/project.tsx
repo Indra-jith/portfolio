@@ -114,7 +114,7 @@ export const Project = ({
                     </div>
                     <div className="flex gap-3 sm:gap-5 items-center flex-wrap">
                         <div className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] relative flex-shrink-0">
-                            <Image src={logo || "/logo.svg"} alt={title} fill className="object-contain" />
+                            <Image src={logo || "/logo.png"} alt={title} fill className="object-contain" />
                         </div>
                         <TextRandomizerEffect
                             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-header break-words"
