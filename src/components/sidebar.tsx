@@ -15,21 +15,6 @@ export const SideBar = () => {
 
     return (
         <nav className="fixed top-0 left-0 h-screen w-16 md:w-24 bg-transparent flex flex-col items-center py-10 z-[999] hidden md:flex">
-            <Image
-                src={isDarkMode ? "/logo.png" : "/logolight.png"}
-                alt="Logo"
-                width={48}
-                height={48}
-                onClick={() => {
-                    if (window.location.pathname !== "/") {
-                        navigation.push("/");
-                    }
-                    else {
-                        handleScrollTo("");
-                    }
-                }}
-                className="cursor-pointer mb-auto"
-            />
 
             {(((orientation === "landscape") || (orientation === "portrait" && pathname !== "/send-message")) && !(orientation === "portrait" && project_pathnames.includes(pathname))) && (
                 <div className="flex items-center justify-center h-full">
