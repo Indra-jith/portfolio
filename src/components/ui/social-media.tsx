@@ -21,7 +21,7 @@ export const SocialMediaLinks = () => {
                     >LinkedIn
                     </motion.div>}
                 <FaLinkedin className="cursor-pointer hover:scale-110 transition hover:text-secondary"
-                    onClick={() => window.open("https://www.linkedin.com/in/indrajith-m-p", "_blank")}
+                    onClick={() => window.open("https://www.linkedin.com/in/indrajithmp/", "_blank")}
                     onMouseEnter={() => setIsLinkedinLabelVisible(true)}
                     onMouseLeave={() => setIsLinkedinLabelVisible(false)} />
             </div>
@@ -49,7 +49,7 @@ export const SocialMediaLinks = () => {
                     >Email
                     </motion.div>}
                 <FaEnvelope className="cursor-pointer hover:scale-110 transition hover:text-secondary"
-                    onClick={() => window.open("mailto:indrajith@example.com", "_blank")}
+                    onClick={() => window.open("mailto:indrajithmp77@gmail.com", "_blank")}
                     onMouseEnter={() => setIsEmailLabelVisible(true)}
                     onMouseLeave={() => setIsEmailLabelVisible(false)} />
             </div>
