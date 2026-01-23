@@ -1,6 +1,6 @@
 import { handleOpenUrl } from "@/lib/utilfunctions";
 import CustomButton from "./custom-button";
-import { TextRandomizerEffect } from "./ui/text-randomizer";
+import BlurText from "./ui/blur-text";
 import Image from "next/image";
 
 import { motion } from "motion/react";
@@ -116,10 +116,12 @@ export const Project = ({
                         <div className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] relative flex-shrink-0">
                             <Image src={logo || "/logo.png"} alt={title} fill className="object-contain" />
                         </div>
-                        <TextRandomizerEffect
+                        <BlurText
+                            text={title}
+                            delay={150}
+                            animateBy="words"
+                            direction="top"
                             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-header break-words"
-                            words={title}
-                            placeholder={true}
                         />
                     </div>
                     <span className="text-base sm:text-lg md:text-xl text-cfgray leading-[1.6] font-inter block">
