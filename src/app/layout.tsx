@@ -46,7 +46,6 @@ export default function RootLayout({
       </head>
       <body className="antialiased bg-secondary font-primary text-white overflow-x-hidden transition-colors duration-300">
         <SmoothScroll>
-          <InteractiveGridPattern className="opacity-40" />
           <ThemeProvider>
             <ToastContainer
               position="top-center"

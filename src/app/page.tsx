@@ -40,25 +40,25 @@ function Home() {
 
   return (
     <main className="w-full min-h-screen overflow-hidden landscape:px-30">
+      <div className="fixed inset-0 z-[-2]">
+        <Particles
+          particleColors={["#00fffb", "#00fffb", "#00fffb"]}
+          particleCount={1000}
+          particleSpread={10}
+          speed={0.4}
+          particleBaseSize={100}
+          moveParticlesOnHover
+          alphaParticles={false}
+          disableRotation={false}
+          pixelRatio={1}
+          className="w-full h-full"
+        />
+      </div>
       {isDarkMode ? (
-        <div className="fixed inset-0 z-[-1] opacity-[0.66]">
+        <div className="fixed inset-0 z-[-1] opacity-[0.76]">
           <Hyperspeed effectOptions={hyperspeedPresets.one} />
         </div>
-      ) : (
-        <div style={{ width: '100%', height: '100%', position: 'fixed', zIndex: -1, top: 0, left: 0 }}>
-          <Particles
-            particleColors={["#000000", "#333333", "#666666"]}
-            particleCount={200}
-            particleSpread={10}
-            speed={0.1}
-            particleBaseSize={100}
-            moveParticlesOnHover
-            alphaParticles={false}
-            disableRotation={false}
-            pixelRatio={1}
-          />
-        </div>
-      )}
+      ) : null}
 
       <SocialMediaLinks />
       <ViewCVButton />
