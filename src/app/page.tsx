@@ -16,6 +16,7 @@ import { useTheme } from "@/components/context/theme-context";
 import { AboutSection } from "@/components/about";
 import { Education } from "@/components/education";
 import { TechMarquee } from "@/components/ui/tech-marquee";
+import Hyperspeed, { hyperspeedPresets } from "@/components/hyperspeed";
 
 function Home() {
   const [scrollIconOpacity, setScrollIconOpacity] = React.useState(0);
@@ -35,15 +36,20 @@ function Home() {
     };
   }, []);
 
+
+
   return (
     <main className="w-full min-h-screen overflow-hidden landscape:px-30">
-      {
-        isDarkMode ? <Spotlight height={breakpoint == 'xs' ? 850 : breakpoint == 'md' ? 1000 : breakpoint == 'lg' ? 1200 : 1380} />
-          : <Spotlight height={breakpoint == 'xs' ? 850 : breakpoint == 'md' ? 1000 : breakpoint == 'lg' ? 1200 : 1380}
-            gradientFirst="radial-gradient(68.54% 68.72% at 60.02% 31.46%, hsla(30, 50%, 70%, .08) 0, hsla(30, 45%, 50%, .02) 50%, hsla(30, 40%, 35%, 0) 80%)"
-            gradientSecond="radial-gradient(50% 50% at 50% 60%, hsla(30, 55%, 75%, .06) 0, hsla(30, 45%, 45%, .02) 80%, transparent 100%)"
-            gradientThird="radial-gradient(50% 50% at 50% 60%, hsla(30, 50%, 70%, .04) 0, hsla(30, 40%, 35%, .02) 80%, transparent 100%)" />
-      }
+      {isDarkMode ? (
+        <div className="fixed inset-0 z-[-1]">
+          <Hyperspeed effectOptions={hyperspeedPresets.one} />
+        </div>
+      ) : (
+        <Spotlight height={breakpoint == 'xs' ? 850 : breakpoint == 'md' ? 1000 : breakpoint == 'lg' ? 1200 : 1380}
+          gradientFirst="radial-gradient(68.54% 68.72% at 60.02% 31.46%, hsla(30, 50%, 70%, .08) 0, hsla(30, 45%, 50%, .02) 50%, hsla(30, 40%, 35%, 0) 80%)"
+          gradientSecond="radial-gradient(50% 50% at 50% 60%, hsla(30, 55%, 75%, .06) 0, hsla(30, 45%, 45%, .02) 80%, transparent 100%)"
+          gradientThird="radial-gradient(50% 50% at 50% 60%, hsla(30, 50%, 70%, .04) 0, hsla(30, 40%, 35%, .02) 80%, transparent 100%)" />
+      )}
 
       <SocialMediaLinks />
       <ViewCVButton />
