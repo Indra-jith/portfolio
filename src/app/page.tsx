@@ -43,7 +43,6 @@ function Home() {
       {isDarkMode ? (
         <div className="fixed inset-0 z-[-1] opacity-60">
           <Hyperspeed effectOptions={hyperspeedPresets.one} />
-          <div className="absolute inset-0 bg-black/40" />
         </div>
       ) : (
         <Spotlight height={breakpoint == 'xs' ? 850 : breakpoint == 'md' ? 1000 : breakpoint == 'lg' ? 1200 : 1380}
