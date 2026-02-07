@@ -89,7 +89,7 @@ function Home() {
       <Project
         title={'Intentra'}
         description={"An open-source Prompt Designer & Execution Engine that transforms vague ideas into perfect AI prompts using multi-LLM refinement. Built on zero-cost infrastructure with Cloudflare Workers and free LLM APIs."}
-        imageUrl={"/assets/intentra.png"}
+        imageUrl={"/techstacks/react.svg"} // Placeholder
         logo={"/techstacks/react.svg"}
         link={"https://github.com/Indra-jith/Intentra"}
         number={1}
