@@ -87,12 +87,24 @@ function Home() {
       </div>
 
       <Project
+        title={'Intentra'}
+        description={"An open-source Prompt Designer & Execution Engine that transforms vague ideas into perfect AI prompts using multi-LLM refinement. Built on zero-cost infrastructure with Cloudflare Workers and free LLM APIs."}
+        imageUrl={"/assets/intentra.png"}
+        logo={"/techstacks/react.svg"}
+        link={"https://github.com/Indra-jith/Intentra"}
+        number={1}
+        techstacks={['React', 'TypeScript', 'Cloudflare', 'AI']}
+        project_story_path={"/projects/intentra"}
+        buttonText="GitHub"
+      />
+
+      <Project
         title={'Gesture Control System'}
         description={"A computer vision-based system allowing users to control devices using hand gestures. Integrates detection algorithms for real-time interaction."}
         imageUrl={"/assets/gesture-control.png"}
         logo={"/techstacks/python.svg"}
         link={"https://github.com/Indra-jith/Gesture-Control-System"}
-        number={1}
+        number={2}
         techstacks={['Python', 'Computer Vision', 'AI']}
         project_story_path={"/projects/gesture-control"}
         buttonText="GitHub"
@@ -105,7 +117,7 @@ function Home() {
         imageUrl={"/assets/bert-t5.jpg"}
         logo={"/techstacks/python.svg"}
         link={"https://drive.google.com/file/d/1nDfqMawYX3LCb_hTGZquTUpAz5L5QvdH/view?usp=sharing"}
-        number={2}
+        number={3}
         techstacks={['Python', 'NLP', 'AI', 'Reinforcement Learning']}
         project_story_path={"/projects/bert-t5"}
         buttonText="Read the Paper"
@@ -119,7 +131,7 @@ function Home() {
         imageUrl={"/assets/stock-portfolio.png"}
         logo={"/techstacks/python.svg"}
         link={"https://github.com/Indra-jith/QuantAI"}
-        number={3}
+        number={4}
         techstacks={['Python', 'Reinforcement Learning', 'AI', 'Node.js']}
         project_story_path={"/projects/stock-portfolio"}
         buttonText="GitHub"
@@ -133,7 +145,7 @@ function Home() {
         imageUrl={"/techstacks/python.svg"} // Placeholder
         logo={"/techstacks/python.svg"} // Placeholder
         link={"https://drive.google.com/file/d/1x1XX9ak5VPqwDMpsWdhZKH_0yyOQFHxh/view?usp=sharing"}
-        number={4}
+        number={5}
         techstacks={['Python', 'AI', 'Computer Vision']}
         buttonText="Read Paper"
       />
@@ -145,7 +157,7 @@ function Home() {
         imageUrl={"/techstacks/python.svg"} // Placeholder
         logo={"/techstacks/python.svg"} // Placeholder
         link={"https://github.com/Indra-jith/Fake-News-Detection"}
-        number={5}
+        number={6}
         techstacks={['Python', 'NLP', 'AI']}
         project_story_path={"/projects/fake-news"}
         buttonText="GitHub"

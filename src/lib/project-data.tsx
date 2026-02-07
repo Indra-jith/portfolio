@@ -11,11 +11,67 @@ export type ProjectContent = {
 };
 
 export const projectsData: Record<string, ProjectContent> = {
+    "intentra": {
+        title: "Intentra",
+        date: "Feb 2025",
+        readTime: "8 min read",
+        prevProject: undefined,
+        nextProject: "gesture-control",
+        content: (
+            <>
+                <section className="flex flex-col gap-5 text-lg text-cfgray">
+                    <p>Transform vague ideas into <strong>perfect AI prompts</strong> — Free forever! Intentra is a production-ready prompt optimization platform that automatically refines user prompts through <strong>multi-stage AI optimization</strong> and executes them to generate high-quality outputs.</p>
+                    <p>Built on <strong>zero-cost infrastructure</strong> using Cloudflare Workers and free LLM APIs (Gemini & Groq), making it completely free to use.</p>
+                </section>
+
+                <h2 className="pt-8 pb-5 text-3xl font-semibold">🎯 How It Works</h2>
+                <ol className="list-decimal space-y-2 ml-6 text-lg text-cfgray">
+                    <li><strong>Enter your prompt</strong> — Type any vague or rough idea</li>
+                    <li><strong>AI refinement</strong> — Intentra enhances it with context, structure & clarity</li>
+                    <li><strong>Side-by-side comparison</strong> — Review original vs refined prompt</li>
+                    <li><strong>Generate output</strong> — Execute the refined prompt for superior results</li>
+                </ol>
+
+                <h2 className="pt-8 pb-5 text-3xl font-semibold">🛠️ Tech Stack</h2>
+                <h3 className="pt-4 pb-3 text-2xl font-semibold">Frontend</h3>
+                <ul className="list-disc space-y-2 ml-6 text-lg text-cfgray">
+                    <li><strong>React 19 + TypeScript</strong> — Type-safe UI development</li>
+                    <li><strong>Vite 7</strong> — Blazing-fast builds</li>
+                    <li><strong>Tailwind CSS 4</strong> — Utility-first styling</li>
+                    <li><strong>Framer Motion + GSAP</strong> — Premium animations</li>
+                    <li><strong>Three.js</strong> — WebGL lightning background</li>
+                </ul>
+
+                <h3 className="pt-6 pb-3 text-2xl font-semibold">Backend</h3>
+                <ul className="list-disc space-y-2 ml-6 text-lg text-cfgray">
+                    <li><strong>Cloudflare Workers</strong> — Serverless edge functions</li>
+                    <li><strong>Hono.js</strong> — Ultrafast web framework</li>
+                    <li><strong>Cloudflare D1</strong> — SQLite at the edge</li>
+                    <li><strong>Cloudflare KV</strong> — Caching and rate limiting</li>
+                </ul>
+
+                <h3 className="pt-6 pb-3 text-2xl font-semibold">LLM APIs</h3>
+                <ul className="list-disc space-y-2 ml-6 text-lg text-cfgray">
+                    <li><strong>Gemini 2.0 Flash</strong> — Primary AI model</li>
+                    <li><strong>Groq (Llama 3.3 70B)</strong> — Automatic fallback for reliability</li>
+                </ul>
+
+                <h2 className="pt-8 pb-5 text-3xl font-semibold">🚀 Features</h2>
+                <ul className="list-disc space-y-3 ml-6 text-lg text-cfgray">
+                    <li><strong>Multi-LLM Refinement</strong> — Automatically switches between AI models</li>
+                    <li><strong>Zero-Cost Infrastructure</strong> — Runs on Cloudflare's free tier</li>
+                    <li><strong>Real-time Preview</strong> — Side-by-side prompt comparison</li>
+                    <li><strong>Premium UI</strong> — Beautiful WebGL backgrounds and animations</li>
+                    <li><strong>Open Source</strong> — MIT licensed, contributions welcome!</li>
+                </ul>
+            </>
+        )
+    },
     "gesture-control": {
         title: "Gesture Control System",
         date: "Nov 2024",
         readTime: "8 min read",
-        prevProject: undefined,
+        prevProject: "intentra",
         nextProject: "bert-t5",
         content: (
             <>

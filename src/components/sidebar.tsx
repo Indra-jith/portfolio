@@ -9,7 +9,7 @@ export const SideBar = () => {
     const { orientation } = useTailwindBreakpoint();
     const { isDarkMode } = useTheme();
     // Update project pathnames to match Indrajith's projects
-    const project_pathnames = ["/projects/gesture-control", "/projects/bert-t5", "/projects/stock-portfolio", "/projects/gait-analysis", "/projects/fake-news"];
+    const project_pathnames = ["/projects/intentra", "/projects/gesture-control", "/projects/bert-t5", "/projects/stock-portfolio", "/projects/gait-analysis", "/projects/fake-news"];
     const pathname = usePathname();
     const navigation = useRouter();
 

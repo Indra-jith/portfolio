@@ -64,7 +64,8 @@ export const Project = ({
         "Computer Vision": "border-red-400 text-red-400",
         "AI": "border-purple-400 text-purple-400",
         "NLP": "border-green-400 text-green-400",
-        "Reinforcement Learning": "border-yellow-400 text-yellow-400"
+        "Reinforcement Learning": "border-yellow-400 text-yellow-400",
+        "Cloudflare": "border-orange-400 text-orange-400"
     };
 
     const techStackClassesLight: Record<string, string> = {
@@ -91,7 +92,8 @@ export const Project = ({
         "Computer Vision": "border-red-600 text-red-600",
         "AI": "border-purple-600 text-purple-600",
         "NLP": "border-green-600 text-green-600",
-        "Reinforcement Learning": "border-yellow-600 text-yellow-600"
+        "Reinforcement Learning": "border-yellow-600 text-yellow-600",
+        "Cloudflare": "border-orange-600 text-orange-600"
     };
 
     const navigator = useRouter();
