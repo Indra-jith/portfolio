@@ -11,11 +11,63 @@ export type ProjectContent = {
 };
 
 export const projectsData: Record<string, ProjectContent> = {
+    "failure-aware-vision": {
+        title: "Failure Aware Vision",
+        date: "Feb 2026",
+        readTime: "6 min read",
+        prevProject: undefined,
+        nextProject: "intentra",
+        content: (
+            <>
+                <section className="flex flex-col gap-5 text-lg text-cfgray">
+                    <p>A <strong>real-time ML perception engine</strong> that continuously scores frame-level anomalies — blur, brightness, entropy, and freeze detection — at <strong>30Hz using OpenCV</strong>, modeling reliability as a continuous confidence score with asymmetric temporal decay.</p>
+                    <p>Deployed as a cloud-hosted <strong>FastAPI + WebSocket</strong> application on Render, with live telemetry streaming, interactive corruption injection, and CSV diagnostics export.</p>
+                </section>
+
+                <h2 className="pt-8 pb-5 text-3xl font-semibold">🚀 Key Contributions</h2>
+                <ul className="list-disc space-y-4 ml-6 text-lg text-cfgray">
+                    <li>
+                        <strong>Real-Time Anomaly Scoring</strong> — Engineered frame-level anomaly scoring (blur, brightness, entropy, freeze detection) at <strong>30Hz</strong> using OpenCV, with a continuous confidence score model and asymmetric temporal decay.
+                    </li>
+                    <li>
+                        <strong>Trust-Based Safety State Machine</strong> — Designed a bounded ML-influence architecture with deterministic policy gating, achieving <strong>zero false-safe resumptions</strong> across 5 corruption types in simulation validation.
+                    </li>
+                    <li>
+                        <strong>Production Deployment</strong> — Refactored from a ROS prototype to a <strong>FastAPI + WebSocket</strong> architecture with live telemetry streaming, cloud-hosted on Render with interactive corruption injection and CSV diagnostics export.
+                    </li>
+                </ul>
+
+                <h2 className="pt-8 pb-5 text-3xl font-semibold">🛠️ Tech Stack</h2>
+                <ul className="list-disc space-y-2 ml-6 text-lg text-cfgray">
+                    <li><strong>FastAPI</strong> — High-performance async Python web framework</li>
+                    <li><strong>ROS</strong> — Robot Operating System (original prototype)</li>
+                    <li><strong>OpenCV</strong> — Real-time frame processing at 30Hz</li>
+                    <li><strong>WebSockets</strong> — Live telemetry streaming to the frontend</li>
+                    <li><strong>Python</strong> — Core ML logic and confidence scoring</li>
+                </ul>
+
+                <h2 className="pt-8 pb-5 text-3xl font-semibold">🌐 Live Demo</h2>
+                <section className="flex flex-col gap-5">
+                    <div className="flex flex-col h-fit items-center bg-white/5 p-8 rounded-lg">
+                        <p className="text-center text-cfgray mb-4">📹 Interactive demo with live corruption injection and telemetry</p>
+                        <a
+                            href="https://failure-aware-vision.onrender.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-3 bg-secondary/20 hover:bg-secondary/30 text-secondary rounded-lg transition-colors duration-200 font-semibold"
+                        >
+                            Open Live Demo →
+                        </a>
+                    </div>
+                </section>
+            </>
+        )
+    },
     "intentra": {
         title: "Intentra",
         date: "Feb 2025",
         readTime: "8 min read",
-        prevProject: undefined,
+        prevProject: "failure-aware-vision",
         nextProject: "gesture-control",
         content: (
             <>
@@ -156,7 +208,7 @@ export const projectsData: Record<string, ProjectContent> = {
         date: "Sep 2024",
         readTime: "7 min read",
         prevProject: "bert-t5",
-        nextProject: "gait-analysis",
+        nextProject: undefined,
         content: (
             <>
                 <section className="flex flex-col gap-5 text-lg text-cfgray">
@@ -194,55 +246,4 @@ export const projectsData: Record<string, ProjectContent> = {
             </>
         )
     },
-    "gait-analysis": {
-        title: "ML-Based Gait Analysis",
-        date: "Aug 2024",
-        readTime: "4 min read",
-        prevProject: "stock-portfolio",
-        nextProject: "fake-news",
-        content: (
-            <>
-                <section className="flex flex-col gap-5 text-lg text-cfgray">
-                    <p>Healthcare application using <strong>Machine Learning</strong> to analyze human gait patterns for early diagnosis of disorders.</p>
-                </section>
-            </>
-        )
-    },
-    "fake-news": {
-        title: "Fake News Detection System",
-        date: "Jul 2024",
-        readTime: "6 min read",
-        prevProject: "gait-analysis",
-        nextProject: undefined,
-        content: (
-            <>
-                <section className="flex flex-col gap-5 text-lg text-cfgray">
-                    <h1 className="text-4xl font-bold text-header mb-4">Fake News Detection</h1>
-                    <p>This project focuses on detecting fake news using <strong>machine learning techniques</strong>. It leverages datasets from Kaggle and applies various models to classify news articles as either real or fake.</p>
-                </section>
-
-                <h2 className="pt-8 pb-5 text-3xl font-semibold">📂 Project Overview</h2>
-                <section className="flex flex-col gap-5 text-lg text-cfgray">
-                    <p><strong>Objective:</strong> Build a model that can distinguish between real and fake news articles.</p>
-
-                    <h3 className="pt-4 pb-2 text-2xl font-semibold text-header">Datasets Used:</h3>
-                    <ul className="list-disc space-y-2 ml-6">
-                        <li><strong>IFND Dataset</strong></li>
-                        <li><strong>True.csv & Fake.csv</strong></li>
-                    </ul>
-
-                    <p className="pt-4"><strong>Implementation:</strong> The project is implemented in Jupyter Notebook and utilizes libraries such as <strong>pandas</strong>, <strong>scikit-learn</strong>, and <strong>NLTK</strong> for data preprocessing and model training.</p>
-                </section>
-
-                <h2 className="pt-8 pb-5 text-3xl font-semibold">🚀 Features</h2>
-                <ul className="list-disc space-y-3 ml-6 text-lg text-cfgray">
-                    <li>Data cleaning and preprocessing</li>
-                    <li>Exploratory Data Analysis (EDA)</li>
-                    <li>TF-IDF vectorization</li>
-                    <li>Model training using various ML algorithms (Logistic Regression, SVM, Random Forest, etc.)</li>
-                    <li>Performance evaluation using accuracy, precision, recall, and F1-score</li>
-                </ul>
-            </>
-        )
-    }
 };

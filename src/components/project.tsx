@@ -65,7 +65,11 @@ export const Project = ({
         "AI": "border-purple-400 text-purple-400",
         "NLP": "border-green-400 text-green-400",
         "Reinforcement Learning": "border-yellow-400 text-yellow-400",
-        "Cloudflare": "border-orange-400 text-orange-400"
+        "Cloudflare": "border-orange-400 text-orange-400",
+        "FastAPI": "border-teal-400 text-teal-400",
+        "ROS": "border-rose-400 text-rose-400",
+        "WebSockets": "border-violet-400 text-violet-400",
+        "OpenCV": "border-sky-400 text-sky-400"
     };
 
     const techStackClassesLight: Record<string, string> = {
@@ -93,7 +97,11 @@ export const Project = ({
         "AI": "border-purple-600 text-purple-600",
         "NLP": "border-green-600 text-green-600",
         "Reinforcement Learning": "border-yellow-600 text-yellow-600",
-        "Cloudflare": "border-orange-600 text-orange-600"
+        "Cloudflare": "border-orange-600 text-orange-600",
+        "FastAPI": "border-teal-600 text-teal-600",
+        "ROS": "border-rose-600 text-rose-600",
+        "WebSockets": "border-violet-600 text-violet-600",
+        "OpenCV": "border-sky-600 text-sky-600"
     };
 
     const navigator = useRouter();

@@ -4,8 +4,8 @@ import { MdOutlineOpenInNew } from "react-icons/md";
 export const ViewCVButton = () => {
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/Indrajith_Resume2026.pdf';
-        link.download = 'Indrajith_Resume2026.pdf';
+        link.href = '/IndrajithMP.pdf';
+        link.download = 'IndrajithMP.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

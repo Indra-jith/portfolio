@@ -87,12 +87,24 @@ function Home() {
       </div>
 
       <Project
+        title={'Failure Aware Vision'}
+        description={"Real-time ML perception engine that scores frame-level anomalies (blur, brightness, entropy, freeze) at 30Hz using OpenCV. Features a trust-based safety state machine with deterministic policy gating, deployed on Render with live WebSocket telemetry."}
+        imageUrl={"/techstacks/python.svg"} // Placeholder
+        logo={"/techstacks/python.svg"}
+        link={"https://failure-aware-vision.onrender.com/"}
+        number={1}
+        techstacks={['Python', 'FastAPI', 'ROS', 'OpenCV', 'WebSockets']}
+        project_story_path={"/projects/failure-aware-vision"}
+        buttonText="Live Demo"
+      />
+
+      <Project
         title={'Intentra'}
         description={"An open-source Prompt Designer & Execution Engine that transforms vague ideas into perfect AI prompts using multi-LLM refinement. Built on zero-cost infrastructure with Cloudflare Workers and free LLM APIs."}
         imageUrl={"/techstacks/react.svg"} // Placeholder
         logo={"/techstacks/react.svg"}
         link={"https://github.com/Indra-jith/Intentra"}
-        number={1}
+        number={2}
         techstacks={['React', 'TypeScript', 'Cloudflare', 'AI']}
         project_story_path={"/projects/intentra"}
         buttonText="GitHub"
@@ -104,7 +116,7 @@ function Home() {
         imageUrl={"/assets/gesture-control.png"}
         logo={"/techstacks/python.svg"}
         link={"https://github.com/Indra-jith/Gesture-Control-System"}
-        number={2}
+        number={3}
         techstacks={['Python', 'Computer Vision', 'AI']}
         project_story_path={"/projects/gesture-control"}
         buttonText="GitHub"
@@ -117,7 +129,7 @@ function Home() {
         imageUrl={"/assets/bert-t5.jpg"}
         logo={"/techstacks/python.svg"}
         link={"https://drive.google.com/file/d/1nDfqMawYX3LCb_hTGZquTUpAz5L5QvdH/view?usp=sharing"}
-        number={3}
+        number={4}
         techstacks={['Python', 'NLP', 'AI', 'Reinforcement Learning']}
         project_story_path={"/projects/bert-t5"}
         buttonText="Read the Paper"
@@ -131,36 +143,12 @@ function Home() {
         imageUrl={"/assets/stock-portfolio.png"}
         logo={"/techstacks/python.svg"}
         link={"https://github.com/Indra-jith/QuantAI"}
-        number={4}
+        number={5}
         techstacks={['Python', 'Reinforcement Learning', 'AI', 'Node.js']}
         project_story_path={"/projects/stock-portfolio"}
         buttonText="GitHub"
         secondaryLink="https://drive.google.com/file/d/1nZjEdGYoZD9Ue6On2QgdAOa3bsygSdys/view?usp=sharing"
         secondaryButtonText="View Paper"
-      />
-
-      <Project
-        title={'ML-Based Gait Analysis'}
-        description={"Healthcare research project analyzing gait patterns using Machine Learning. Aims to assist in early diagnosis of locomotor disorders."}
-        imageUrl={"/techstacks/python.svg"} // Placeholder
-        logo={"/techstacks/python.svg"} // Placeholder
-        link={"https://drive.google.com/file/d/1x1XX9ak5VPqwDMpsWdhZKH_0yyOQFHxh/view?usp=sharing"}
-        number={5}
-        techstacks={['Python', 'AI', 'Computer Vision']}
-        buttonText="Read Paper"
-      />
-
-
-      <Project
-        title={'Fake News Detection System'}
-        description={"A system designed to identify and flag fake news articles using NLP techniques. Helps in combating misinformation by verifying content credibility."}
-        imageUrl={"/techstacks/python.svg"} // Placeholder
-        logo={"/techstacks/python.svg"} // Placeholder
-        link={"https://github.com/Indra-jith/Fake-News-Detection"}
-        number={6}
-        techstacks={['Python', 'NLP', 'AI']}
-        project_story_path={"/projects/fake-news"}
-        buttonText="GitHub"
       />
 
       <ContactSection />
