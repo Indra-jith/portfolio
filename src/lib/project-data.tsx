@@ -11,39 +11,75 @@ export type ProjectContent = {
 };
 
 export const projectsData: Record<string, ProjectContent> = {
-    "failure-aware-vision": {
-        title: "Failure Aware Vision",
-        date: "Feb 2026",
-        readTime: "6 min read",
+    "shadow-mind": {
+        title: "ShadowMind",
+        date: "2026",
+        readTime: "7 min read",
         prevProject: undefined,
-        nextProject: "intentra",
+        nextProject: "failure-aware-vision",
         content: (
             <>
                 <section className="flex flex-col gap-5 text-lg text-cfgray">
-                    <p>A <strong>real-time ML perception engine</strong> that continuously scores frame-level anomalies — blur, brightness, entropy, and freeze detection — at <strong>30Hz using OpenCV</strong>, modeling reliability as a continuous confidence score with asymmetric temporal decay.</p>
-                    <p>Deployed as a cloud-hosted <strong>FastAPI + WebSocket</strong> application on Render, with live telemetry streaming, interactive corruption injection, and CSV diagnostics export.</p>
+                    <p>An <strong>Autonomous AI Investigation Agent</strong> that goes beyond standard single-pass RAG. It uses a <strong>hypothesis-driven agentic RAG pipeline</strong> to autonomously generate theories, retrieve targeted evidence, and loop until convergence.</p>
+                    <p>Built with <strong>LangGraph</strong> for agent orchestration and <strong>Qdrant</strong> for high-performance vector retrieval.</p>
                 </section>
 
                 <h2 className="pt-8 pb-5 text-3xl font-semibold">🚀 Key Contributions</h2>
                 <ul className="list-disc space-y-4 ml-6 text-lg text-cfgray">
                     <li>
-                        <strong>Real-Time Anomaly Scoring</strong> — Engineered frame-level anomaly scoring (blur, brightness, entropy, freeze detection) at <strong>30Hz</strong> using OpenCV, with a continuous confidence score model and asymmetric temporal decay.
+                        <strong>Agentic RAG Pipeline</strong> — Engineered a hypothesis-driven workflow using LangGraph where the agent generates competing theories, retrieves evidence from Qdrant, scores confidence, and iterates until convergence.
                     </li>
                     <li>
-                        <strong>Trust-Based Safety State Machine</strong> — Designed a bounded ML-influence architecture with deterministic policy gating, achieving <strong>zero false-safe resumptions</strong> across 5 corruption types in simulation validation.
+                        <strong>Custom Web Ingestion</strong> — Built a pipeline using <strong>BeautifulSoup</strong> to scrape, clean, and chunk 150+ articles across 30+ topics into a semantically searchable corpus using <strong>Cohere embed-english-v3.0</strong>.
                     </li>
                     <li>
-                        <strong>Production Deployment</strong> — Refactored from a ROS prototype to a <strong>FastAPI + WebSocket</strong> architecture with live telemetry streaming, cloud-hosted on Render with interactive corruption injection and CSV diagnostics export.
+                        <strong>Structured Reasoning</strong> — Enforced fully structured LLM outputs using <strong>Pydantic v2</strong> across all 5 agent nodes, with <strong>Groq (Llama 3.3 70B)</strong> as the reasoning engine for sub-second inference.
                     </li>
                 </ul>
 
                 <h2 className="pt-8 pb-5 text-3xl font-semibold">🛠️ Tech Stack</h2>
                 <ul className="list-disc space-y-2 ml-6 text-lg text-cfgray">
-                    <li><strong>FastAPI</strong> — High-performance async Python web framework</li>
-                    <li><strong>ROS</strong> — Robot Operating System (original prototype)</li>
-                    <li><strong>OpenCV</strong> — Real-time frame processing at 30Hz</li>
-                    <li><strong>WebSockets</strong> — Live telemetry streaming to the frontend</li>
-                    <li><strong>Python</strong> — Core ML logic and confidence scoring</li>
+                    <li><strong>LangGraph</strong> — Agentic workflow orchestration</li>
+                    <li><strong>Qdrant</strong> — Vector database for semantic search</li>
+                    <li><strong>Cohere</strong> — High-dimensional 1024-dim embeddings</li>
+                    <li><strong>FastAPI</strong> — Async backend for investigation streaming</li>
+                    <li><strong>Pydantic</strong> — Structured data validation</li>
+                </ul>
+            </>
+        )
+    },
+    "failure-aware-vision": {
+        title: "Failure Aware Vision",
+        date: "Feb 2026",
+        readTime: "6 min read",
+        prevProject: "shadow-mind",
+        nextProject: "intentra",
+        content: (
+            <>
+                <section className="flex flex-col gap-5 text-lg text-cfgray">
+                    <p>A <strong>ML perception safety engine</strong> that ensures reliable autonomous navigation by detecting frame-level anomalies in real-time. It achieves <strong>zero false-safe resumptions</strong> across multiple adversarial input types.</p>
+                    <p>Utilizes a trust-based safety state machine with deterministic policy gating and asymmetric temporal decay.</p>
+                </section>
+
+                <h2 className="pt-8 pb-5 text-3xl font-semibold">🚀 Key Contributions</h2>
+                <ul className="list-disc space-y-4 ml-6 text-lg text-cfgray">
+                    <li>
+                        <strong>Real-Time Perceptual Safety</strong> — Achieved zero false-safe resumptions across 5 adversarial input types (blur, brightness, entropy, freeze, noise) via a trust-based safety state machine.
+                    </li>
+                    <li>
+                        <strong>Anomaly Scoring at 30Hz</strong> — Sustained real-time scoring under adversarial conditions using OpenCV, with zero latency regression across 100+ simulated failure injections.
+                    </li>
+                    <li>
+                        <strong>Edge-Compatible Architecture</strong> — Migrated ROS2 prototype to <strong>FastAPI + WebSocket</strong> architecture with live telemetry streaming and automated CSV diagnostics export.
+                    </li>
+                </ul>
+
+                <h2 className="pt-8 pb-5 text-3xl font-semibold">🛠️ Tech Stack</h2>
+                <ul className="list-disc space-y-2 ml-6 text-lg text-cfgray">
+                    <li><strong>OpenCV</strong> — Real-time frame processing</li>
+                    <li><strong>FastAPI</strong> — High-performance backend</li>
+                    <li><strong>ROS2</strong> — Robotics middleware prototype</li>
+                    <li><strong>WebSockets</strong> — Live telemetry streaming</li>
                 </ul>
 
                 <h2 className="pt-8 pb-5 text-3xl font-semibold">🌐 Live Demo</h2>
@@ -65,56 +101,36 @@ export const projectsData: Record<string, ProjectContent> = {
     },
     "intentra": {
         title: "Intentra",
-        date: "Feb 2025",
+        date: "Nov 2025",
         readTime: "8 min read",
         prevProject: "failure-aware-vision",
         nextProject: "gesture-control",
         content: (
             <>
                 <section className="flex flex-col gap-5 text-lg text-cfgray">
-                    <p>Transform vague ideas into <strong>perfect AI prompts</strong> — Free forever! Intentra is a production-ready prompt optimization platform that automatically refines user prompts through <strong>multi-stage AI optimization</strong> and executes them to generate high-quality outputs.</p>
-                    <p>Built on <strong>zero-cost infrastructure</strong> using Cloudflare Workers and free LLM APIs (Gemini & Groq), making it completely free to use.</p>
+                    <p>A <strong>GenAI Prompt Optimization Platform</strong> that improves LLM output reliability by 67% through a multi-stage prompt engineering pipeline.</p>
+                    <p>Features input scoring, semantic restructuring, and hallucination-risk validation before submission.</p>
                 </section>
 
-                <h2 className="pt-8 pb-5 text-3xl font-semibold">🎯 How It Works</h2>
-                <ol className="list-decimal space-y-2 ml-6 text-lg text-cfgray">
-                    <li><strong>Enter your prompt</strong> — Type any vague or rough idea</li>
-                    <li><strong>AI refinement</strong> — Intentra enhances it with context, structure & clarity</li>
-                    <li><strong>Side-by-side comparison</strong> — Review original vs refined prompt</li>
-                    <li><strong>Generate output</strong> — Execute the refined prompt for superior results</li>
-                </ol>
+                <h2 className="pt-8 pb-5 text-3xl font-semibold">🚀 Key Contributions</h2>
+                <ul className="list-disc space-y-4 ml-6 text-lg text-cfgray">
+                    <li>
+                        <strong>Prompt Engineering Pipeline</strong> — Enhanced output reliability by 67% using a multi-stage pipeline targeting ambiguous and adversarial inputs.
+                    </li>
+                    <li>
+                        <strong>High-Availability Failover</strong> — Engineered quota-aware failover between <strong>Gemini 1.5</strong> and <strong>Groq Llama 3.1</strong>, achieving 99.9% uptime at sub-100ms latency.
+                    </li>
+                    <li>
+                        <strong>Edge Deployment</strong> — Deployed on <strong>Cloudflare Workers</strong> edge with zero cold-start overhead and session-level rate limiting.
+                    </li>
+                </ul>
 
                 <h2 className="pt-8 pb-5 text-3xl font-semibold">🛠️ Tech Stack</h2>
-                <h3 className="pt-4 pb-3 text-2xl font-semibold">Frontend</h3>
                 <ul className="list-disc space-y-2 ml-6 text-lg text-cfgray">
-                    <li><strong>React 19 + TypeScript</strong> — Type-safe UI development</li>
-                    <li><strong>Vite 7</strong> — Blazing-fast builds</li>
-                    <li><strong>Tailwind CSS 4</strong> — Utility-first styling</li>
-                    <li><strong>Framer Motion + GSAP</strong> — Premium animations</li>
-                    <li><strong>Three.js</strong> — WebGL lightning background</li>
-                </ul>
-
-                <h3 className="pt-6 pb-3 text-2xl font-semibold">Backend</h3>
-                <ul className="list-disc space-y-2 ml-6 text-lg text-cfgray">
-                    <li><strong>Cloudflare Workers</strong> — Serverless edge functions</li>
-                    <li><strong>Hono.js</strong> — Ultrafast web framework</li>
-                    <li><strong>Cloudflare D1</strong> — SQLite at the edge</li>
-                    <li><strong>Cloudflare KV</strong> — Caching and rate limiting</li>
-                </ul>
-
-                <h3 className="pt-6 pb-3 text-2xl font-semibold">LLM APIs</h3>
-                <ul className="list-disc space-y-2 ml-6 text-lg text-cfgray">
-                    <li><strong>Gemini 2.0 Flash</strong> — Primary AI model</li>
-                    <li><strong>Groq (Llama 3.3 70B)</strong> — Automatic fallback for reliability</li>
-                </ul>
-
-                <h2 className="pt-8 pb-5 text-3xl font-semibold">🚀 Features</h2>
-                <ul className="list-disc space-y-3 ml-6 text-lg text-cfgray">
-                    <li><strong>Multi-LLM Refinement</strong> — Automatically switches between AI models</li>
-                    <li><strong>Zero-Cost Infrastructure</strong> — Runs on Cloudflare's free tier</li>
-                    <li><strong>Real-time Preview</strong> — Side-by-side prompt comparison</li>
-                    <li><strong>Premium UI</strong> — Beautiful WebGL backgrounds and animations</li>
-                    <li><strong>Open Source</strong> — MIT licensed, contributions welcome!</li>
+                    <li><strong>TypeScript</strong> — Type-safe implementation</li>
+                    <li><strong>Cloudflare Workers</strong> — Edge computing</li>
+                    <li><strong>LLM Orchestration</strong> — Multi-model failover logic</li>
+                    <li><strong>Hono.js</strong> — Fast web framework</li>
                 </ul>
             </>
         )

@@ -1,0 +1,59 @@
+INDRAJITH MP
+Thrissur, Kerala 680662|+91-7558865722|indrajithmp77@gmail.com|linkedin.com/in/indrajithmp|github.com/Indra-jith|
+indrajithmp.vercel.app
+Technical Skills
+AI/ML & GenAI:Python, PyTorch, TensorFlow, Keras, Scikit-learn, Large Language Models (LLMs), Generative AI, Prompt
+Engineering, LLM Orchestration, Retrieval-Augmented Generation (RAG), Agentic AI (LangGraph, LangChain), Hugging Face,
+Embeddings, Vector Databases, Stable Diffusion
+Data & Retrieval:Qdrant, Cohere Embeddings, Semantic Search, Vector Search, Chunking Strategies, Data Pipelines, Feature
+Engineering, EDA, Statistical Modeling, Pandas, NumPy
+Computer Vision & Robotics:OpenCV, MediaPipe, Object Detection, Image Classification, Anomaly Detection, ROS2, Sensor
+Fusion (IMU, Ultrasonic, Encoders), Autonomous Navigation, Raspberry Pi Pico, Arduino, I2C, UART
+Deployment & Engineering:FastAPI, Flask, REST APIs, WebSockets, Pydantic, BeautifulSoup, CI/CD, GitHub Actions,
+Cloudflare Workers, Model Serving, Render, Docker, C/C++, TypeScript, JavaScript
+Experience
+Moonpreneur (Silicon Valley-based Startup)Feb 2025 – Present
+Robotics & AI/ML Project Guide Intern Remote
+•Cut autonomous navigation error rate by40%by engineering4 sensor-fused robotic systemson Raspberry Pi Pico,
+integrating ultrasonic, IMU, and encoder data via I2C/PWM with deterministic fusion algorithms.
+•Maintained94% student comprehension rateacross15+ live sessions(50+ students) on neural networks, deep learning,
+computer vision, and embedded AI — verified via post-session assessments.
+•Drove100% project completionacross 12 students through a 6-module ML curriculum spanning full end-to-end pipelines:
+data ingestion→feature engineering→model training→hyperparameter tuning→deployment.
+•Eliminated GPU dependency by shipping OpenCV + MediaPipe computer vision labs achievingreal-time object detection
+and hand tracking at 30 FPSon commodity hardware via optimized inference pipelines.
+Allsoft Solutions (IBM Business Partner)June 2024 – July 2024
+AI/ML Intern Remote
+•Delivered97% test accuracyand0.96 F1-scoreon a Fake News Detection classifier — ranked #1 in project scope — by
+training an ensemble (Logistic Regression, SVM, XGBoost, Naive Bayes) with GridSearchCV on50K+ samples.
+•Reduced label noise by99.2%via a statistical NLP preprocessing pipeline (tokenization, TF-IDF vectorization, stopword
+removal, exploratory data analysis) across LIAR dataset and Indian news corpora.
+Projects
+ShadowMind – Autonomous AI Investigation Agent|LangGraph, RAG, Qdrant, Cohere, FastAPI2026[In Progress]
+•Engineered ahypothesis-driven agentic RAG pipelineusing LangGraph where the agent autonomously generates
+competing theories, retrieves targeted evidence per hypothesis from aQdrant vector database, scores confidence, eliminates
+weak hypotheses, and loops until convergence — going beyond standard single-pass RAG.
+•Built acustom web ingestion pipelineusing BeautifulSoup to scrape, clean, and chunk150+ articles across 30+ topics
+into a semantically searchable corpus usingCohere embed-english-v3.0(1024-dim embeddings) with automated rate-limit
+handling and retry logic.
+•Enforcedfully structured LLM outputsacross all 5 agent nodes using Pydantic v2 — zero unstructured text in the pipeline
+— with Groq (Llama 3.3 70B) as the reasoning engine delivering sub-second inference for real-time investigation streaming.
+Failure-Aware Vision – ML Perception Safety Engine|FastAPI, ROS2, OpenCV, WebSocketsFeb 2026
+•Achievedzero false-safe resumptionsacross 5 adversarial input types (blur, brightness, entropy, freeze, noise) via a
+trust-based safety state machine with deterministic policy gating and asymmetric temporal decay.
+•Sustained30Hz real-time anomaly scoringunder adversarial conditions using a multi-signal frame reliability model with zero
+latency regression across 100+ simulated failure injections.
+•Cut debugging cycle time60%by migrating ROS2 prototype to FastAPI + WebSocket architecture with live telemetry
+streaming, model serving endpoints, and automated CSV diagnostics export.
+Intentra – GenAI Prompt Optimization Platform|TypeScript, LLM Orchestration, Cloudflare WorkersNov 2025
+•Improved LLM output reliability by67%via a multi-stage prompt engineering pipeline — input scoring, semantic restructuring,
+and hallucination-risk validation — before model submission, targeting ambiguous and adversarial inputs.
+•Engineered quota-aware failover betweenGemini 1.5andGroq Llama 3.1achieving99.9% uptimeatsub-100ms latency;
+deployed on Cloudflare Workers edge with zero cold-start overhead and session-level rate limiting.
+Education
+Bachelor of Technology in Computer Science EngineeringExpected May 2026
+Lovely Professional University|CGPA: 9.08 / 10.0(Top 5% of cohort) Punjab, India
+•Coursework:Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Data Structures &
+Algorithms, Statistical Analysis, Operating Systems, Computer Networks
+Certifications
+Generative AI with Large Language Models– DeepLearning.AI / Coursera|Algorithms Specialization– Stanford University

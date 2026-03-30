@@ -15,18 +15,18 @@ type ExperienceData = {
 const experiences: ExperienceData[] = [
     {
         company: "Moonpreneur Inc",
-        role: "Robotics Project Guide",
+        role: "Robotics & AI/ML Project Guide",
         period: "Feb 2025 – Present",
-        description: "Guiding students in robotics projects, fostering technical skills and innovation. Mentoring on embedded systems and prototyping for next-gen solutions.",
-        skills: ["Robotics", "Embedded Systems", "Mentorship", "Prototyping"],
+        description: "Guiding students in robotics and AI/ML projects. Engineered an autonomous navigation system using ROS2 and LiDAR, reducing errors by 25%. Mentored 50+ students in IoT automation, achieving a 95% completion rate.",
+        skills: ["Robotics", "AI/ML", "ROS2", "LiDAR", "IoT", "Mentorship"],
         logo: "/companies/moonpreneur.png",
     },
     {
         company: "Allsoft Solutions",
-        role: "AI Summer Trainee",
-        period: "Jun 2024 – Aug 2024",
-        description: "Gained hands-on experience in AI and Machine Learning. Worked on real-world projects involving Computer Vision and NLP, translating theory into application.",
-        skills: ["Artificial Intelligence", "Computer Vision", "NLP", "Python"],
+        role: "AI/ML Intern",
+        period: "Jun 2024 – Jul 2024",
+        description: "Developed a Fake News Detection System with 94.8% accuracy using XGBoost ensemble. Integrated it into a Flask dashboard, reducing verification time by 80%. Contributed to CV-based LPG pipeline monitoring.",
+        skills: ["Machine Learning", "XGBoost", "Computer Vision", "Flask", "Python"],
         logo: "/companies/allsoft.png",
     },
 ];

@@ -69,7 +69,15 @@ export const Project = ({
         "FastAPI": "border-teal-400 text-teal-400",
         "ROS": "border-rose-400 text-rose-400",
         "WebSockets": "border-violet-400 text-violet-400",
-        "OpenCV": "border-sky-400 text-sky-400"
+        "OpenCV": "border-sky-400 text-sky-400",
+        "LangGraph": "border-purple-300 text-purple-300",
+        "LangChain": "border-green-300 text-green-300",
+        "Qdrant": "border-cyan-300 text-cyan-300",
+        "Cohere": "border-blue-300 text-blue-300",
+        "ROS2": "border-rose-400 text-rose-400",
+        "Pydantic": "border-emerald-300 text-emerald-300",
+        "BeautifulSoup": "border-green-400 text-green-400",
+        "XGBoost": "border-blue-500 text-blue-500"
     };
 
     const techStackClassesLight: Record<string, string> = {
@@ -101,7 +109,15 @@ export const Project = ({
         "FastAPI": "border-teal-600 text-teal-600",
         "ROS": "border-rose-600 text-rose-600",
         "WebSockets": "border-violet-600 text-violet-600",
-        "OpenCV": "border-sky-600 text-sky-600"
+        "OpenCV": "border-sky-600 text-sky-600",
+        "LangGraph": "border-purple-600 text-purple-600",
+        "LangChain": "border-green-600 text-green-600",
+        "Qdrant": "border-cyan-600 text-cyan-600",
+        "Cohere": "border-blue-600 text-blue-600",
+        "ROS2": "border-rose-600 text-rose-600",
+        "Pydantic": "border-emerald-600 text-emerald-600",
+        "BeautifulSoup": "border-green-700 text-green-700",
+        "XGBoost": "border-blue-700 text-blue-700"
     };
 
     const navigator = useRouter();

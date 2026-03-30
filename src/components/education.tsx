@@ -19,22 +19,6 @@ const educationList: EducationData[] = [
         grade: "CGPA",
         score: 9.08,
         maxScore: 10
-    },
-    {
-        degree: "Senior Secondary (Class XII)",
-        institution: "Carmel HSS",
-        period: "2021",
-        grade: "CGPA",
-        score: 99,
-        maxScore: 100
-    },
-    {
-        degree: "Secondary (Class X)",
-        institution: "Vijayagiri Public School",
-        period: "2019",
-        grade: "CGPA",
-        score: 95,
-        maxScore: 100
     }
 ];
 

@@ -15,7 +15,7 @@ export const AboutSection = () => {
                     delay={0.15}
                 />
                 <div className="font-inter text-secondary text-lg tracking-wider opacity-80">
-                    Data Science • Robotics • AI • Research
+                    GenAI • Robotics • Autonomous Agents • Research
                 </div>
             </div>
 

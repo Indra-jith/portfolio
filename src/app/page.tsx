@@ -87,36 +87,48 @@ function Home() {
       </div>
 
       <Project
+        title={'ShadowMind'}
+        description={"Autonomous AI Investigation Agent using a hypothesis-driven agentic RAG pipeline. Autonomously generates competing theories, retrieves targeted evidence from Qdrant, and iterates until convergence for deep, non-linear reasoning."}
+        imageUrl={"/assets/shadowmind.png"}
+        logo={"/techstacks/python.svg"}
+        link={"https://github.com/Indra-jith/ShadowMind"}
+        number={1}
+        techstacks={['LangGraph', 'Qdrant', 'Cohere', 'FastAPI', 'Pydantic']}
+        project_story_path={"/projects/shadow-mind"}
+        buttonText="GitHub"
+      />
+
+      <Project
         title={'Failure Aware Vision'}
-        description={"Real-time ML perception engine that scores frame-level anomalies (blur, brightness, entropy, freeze) at 30Hz using OpenCV. Features a trust-based safety state machine with deterministic policy gating, deployed on Render with live WebSocket telemetry."}
+        description={"ML perception safety engine achieving zero false-safe resumptions across 5 failure types. Features 30Hz real-time anomaly scoring via a trust-based state machine with asymmetric temporal decay and WebSocket telemetry."}
         imageUrl={"/techstacks/python.svg"} // Placeholder
         logo={"/techstacks/python.svg"}
         link={"https://failure-aware-vision.onrender.com/"}
-        number={1}
-        techstacks={['Python', 'FastAPI', 'ROS', 'OpenCV', 'WebSockets']}
+        number={2}
+        techstacks={['FastAPI', 'ROS2', 'OpenCV', 'WebSockets', 'Python']}
         project_story_path={"/projects/failure-aware-vision"}
         buttonText="Live Demo"
       />
 
       <Project
         title={'Intentra'}
-        description={"An open-source Prompt Designer & Execution Engine that transforms vague ideas into perfect AI prompts using multi-LLM refinement. Built on zero-cost infrastructure with Cloudflare Workers and free LLM APIs."}
+        description={"GenAI Prompt Optimization Platform enhancing output reliability by 67% via multi-stage refinement. Features input scoring, semantic restructuring, and hallucination-risk validation on Cloudflare Workers edge."}
         imageUrl={"/techstacks/react.svg"} // Placeholder
         logo={"/techstacks/react.svg"}
         link={"https://github.com/Indra-jith/Intentra"}
-        number={2}
-        techstacks={['React', 'TypeScript', 'Cloudflare', 'AI']}
+        number={3}
+        techstacks={['TypeScript', 'Cloudflare', 'AI', 'NLP']}
         project_story_path={"/projects/intentra"}
         buttonText="GitHub"
       />
 
       <Project
         title={'Gesture Control System'}
-        description={"A computer vision-based system allowing users to control devices using hand gestures. Integrates detection algorithms for real-time interaction."}
+        description={"A multi-functional CV system for touchless device control. Uses MediaPipe and OpenCV for hand-landmark tracking, enabling gesture-based media, mouse, and game control."}
         imageUrl={"/assets/gesture-control.png"}
         logo={"/techstacks/python.svg"}
         link={"https://github.com/Indra-jith/Gesture-Control-System"}
-        number={3}
+        number={4}
         techstacks={['Python', 'Computer Vision', 'AI']}
         project_story_path={"/projects/gesture-control"}
         buttonText="GitHub"
@@ -125,12 +137,12 @@ function Home() {
 
       <Project
         title={'Transfer Learning with BERT & T5'}
-        description={"Research project utilizing BERT and T5 models for NLP tasks. Explored transfer learning techniques to improve model performance on specific datasets."}
+        description={"Research project exploring efficient transfer learning architectures. Investigated fine-tuning state-of-the-art transformers like BERT and T5 for downstream tasks with minimal compute."}
         imageUrl={"/assets/bert-t5.jpg"}
         logo={"/techstacks/python.svg"}
         link={"https://drive.google.com/file/d/1nDfqMawYX3LCb_hTGZquTUpAz5L5QvdH/view?usp=sharing"}
-        number={4}
-        techstacks={['Python', 'NLP', 'AI', 'Reinforcement Learning']}
+        number={5}
+        techstacks={['Python', 'AI', 'NLP', 'Reinforcement Learning']}
         project_story_path={"/projects/bert-t5"}
         buttonText="Read the Paper"
         downloadPath="/assets/bert-t5-paper.pdf"
@@ -139,11 +151,11 @@ function Home() {
 
       <Project
         title={'Stock Portfolio Optimization'}
-        description={"Developed a DDQN-based reinforcement learning agent to optimize stock portfolios. Achieved improved returns through automated trading strategies."}
+        description={"DQN-based reinforcement learning agent for automated stock trading. Implements target network architectures and prioritized experience replay for optimized portfolio returns."}
         imageUrl={"/assets/stock-portfolio.png"}
         logo={"/techstacks/python.svg"}
         link={"https://github.com/Indra-jith/QuantAI"}
-        number={5}
+        number={6}
         techstacks={['Python', 'Reinforcement Learning', 'AI', 'Node.js']}
         project_story_path={"/projects/stock-portfolio"}
         buttonText="GitHub"

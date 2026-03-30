@@ -9,7 +9,7 @@ export const SideBar = () => {
     const { orientation } = useTailwindBreakpoint();
     const { isDarkMode } = useTheme();
     // Update project pathnames to match Indrajith's projects
-    const project_pathnames = ["/projects/failure-aware-vision", "/projects/intentra", "/projects/gesture-control", "/projects/bert-t5", "/projects/stock-portfolio"];
+    const project_pathnames = ["/projects/shadow-mind", "/projects/failure-aware-vision", "/projects/intentra", "/projects/gesture-control", "/projects/bert-t5", "/projects/stock-portfolio"];
     const pathname = usePathname();
     const navigation = useRouter();
 
@@ -38,14 +38,11 @@ export const SideBar = () => {
                                     }
                                     if (id === "#project1") {
                                         const currentHash = window.location.hash;
-                                        if (currentHash === "#project1") {
-                                            handleScrollTo("#project2");
-                                        } else if (currentHash === "#project2") {
-                                            handleScrollTo("#project3");
-                                        } else if (currentHash === "#project3") {
-                                            handleScrollTo("#project4");
+                                        const projectNum = parseInt(currentHash.replace("#project", "")) || 0;
+                                        if (projectNum >= 1 && projectNum < 6) {
+                                            handleScrollTo(`#project${projectNum + 1}`);
                                         } else {
-                                            handleScrollTo("#project1"); // default start
+                                            handleScrollTo("#project1");
                                         }
                                         return;
                                     }
